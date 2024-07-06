@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(header.css);
+@import url(conteudo.css);
+@import url(dados.css);
+
+:root {
+    --cor-branca: #fff;
+    --cor-preta:#000000;
+    --cor-background: #273133;
+    --cor-primaria:#04D9B2;
+    --cor-secundaria:#038C73;
+    --cor-hover:#B3F2E7;
+    --cor-hover2:#3CFABC;
+
+    --fonte-principal: "Exo 2", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-background);
+    color: var(--cor-branca);
+}
+
+.botao {
+    text-decoration: none;    
+    align-self: center;
+    border-radius: 24px;
+    transition: all 0.5s ease;
+}
