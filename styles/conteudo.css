@@ -136,16 +136,6 @@
     color: var(--cor-tercearia);
 }
 
-@media (min-width:425px) and (max-width:102px){
-    .conteudo_lista_social {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
-        
-}
 
 @media (min-width:1024px) and (max-width:1439px){
     .conteudo_textos{

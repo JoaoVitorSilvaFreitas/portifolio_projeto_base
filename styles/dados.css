@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     font-family: var(--fonte-principal);
+    margin-bottom: 2.8rem;
 }
 
 .infos {
@@ -22,10 +23,14 @@
 .container_card {
     display: flex;
     flex-direction:  column;
+    margin-top: 6rem;
 }
 
 .container_card_alinhamento {
     display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
 }
 
 .card {
@@ -34,7 +39,6 @@
     align-items: center;
     width: 180px;
     height: 220px;
-    margin:2rem;
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
     border: 1px solid var(--cor-primaria);
@@ -59,10 +63,24 @@
     align-items: center;
 }
 
+@media (min-width:720px) and (max-width:1440px) {
+    .container_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 @media (min-width:1440px) {
     .container_dados {
         display: flex;
         flex-direction: row;
         margin-top: 5rem;
     }
+
+    .container_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }   
 }
