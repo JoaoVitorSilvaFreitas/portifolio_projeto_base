@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url(header.css);
 @import url(conteudo.css);
 @import url(dados.css);
@@ -9,10 +9,11 @@
     --cor-background: #273133;
     --cor-primaria:#04D9B2;
     --cor-secundaria:#038C73;
+    --cor-tercearia:#b4b4b4;
     --cor-hover:#B3F2E7;
     --cor-hover2:#3CFABC;
 
-    --fonte-principal: "Exo 2", sans-serif;
+    --fonte-principal: "JetBrains Mono", monospace;
 }
 
 body {
@@ -27,4 +28,18 @@ body {
     align-self: center;
     border-radius: 24px;
     transition: all 0.5s ease;
+}
+
+@media screen and (max-width:720px) {
+    body{
+        width: 100vh;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    body{
+        width: 180vh;
+    }
+
+
 }

@@ -1,0 +1,50 @@
+.container_dados {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--fonte-principal);
+}
+
+.infos {
+    display: flex;
+    gap:1.2rem;
+    align-items: center;
+}
+
+.dados_numeros {
+    font-size: 3.2rem;
+}
+
+.dados_textos {
+    font-size: 1.2rem;
+    color: var(--cor-tercearia);
+}
+
+@media screen and (max-width:720px) {
+    
+    .container_dados {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .infos {
+        display: flex;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    
+    .container_dados {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .infos {
+        display: flex;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+}
