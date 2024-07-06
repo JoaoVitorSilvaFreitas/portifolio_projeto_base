@@ -55,4 +55,14 @@
         align-items: center;
         margin-right: 3rem;
     }
+
+    .item_cabeçalho {
+        text-decoration: none;
+        color: var(--cor-branca);
+    }
+
+    .item_cabeçalho:hover{
+        color: var(--cor-primaria);
+    }
+
 }

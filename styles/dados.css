@@ -19,10 +19,50 @@
     color: var(--cor-tercearia);
 }
 
+.container_card {
+    display: flex;
+    flex-direction:  column;
+}
+
+.container_card_alinhamento {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 220px;
+    margin:2rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+}
+
+.card:hover {
+    background: var(--cor-primaria);
+    color:var(--cor-preta)
+    
+}
+
+.card i {
+    font-size: 5rem;
+    margin: 1rem;
+}
+
+.card h2{
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 1rem;
+    align-items: center;
+}
+
 @media (min-width:1440px) {
     .container_dados {
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 }
