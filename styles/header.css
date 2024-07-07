@@ -43,9 +43,9 @@
 }
 
 .botao_cabeçalho:hover{
-    background: var(--cor-hover2);
+    background: var(--cor-primaria);
     text-shadow: 0 0 12px var(--cor-preta);
-    box-shadow: 0 0 1px 1px var(--cor-hover2);
+    box-shadow: 0 0 1px 1px var(--cor-primaria);
 }
 
 @media (min-width:1440px){

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: var(--fonte-principal);  
+    font-family: var(--fonte-principal);
+    margin-top: 1.4rem;
 }
 
 .conteudo_esquerda {
@@ -13,35 +14,40 @@
     order:2;
 }
 
-.subtitulo_esquerda {
-    font-size: 1.8rem;
-    color: var(--cor-branca);
-    margin-bottom: 3rem;
-}
-
-.titulo_esquerda {
-    font-size: 5rem;
-}
-
 .conteudo_textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
     margin-top: 2rem;
 }
 
+.subtitulo_esquerda {
+    font-size: 1.6rem;
+    color: var(--cor-tercearia);
+    margin-bottom: 1rem;
+}
+
+.titulo_esquerda {
+    font-size: 2rem;    
+    color: var(--cor-tercearia);
+}
 
 .efeito_nome {
     color: var(--cor-primaria);
-    font-size: 8rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    font-size: 4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     text-shadow: 0 0 5px var(--cor-primaria);
 }
 
 .paragrafo_esquerda{
-    font-size: 1.4rem;
+    font-size: .8rem;
     margin-top: 2rem;
     flex-wrap: wrap;    
     color: var(--cor-tercearia);
+    width: 80%;
 }
 
 .conteudo_lista_social {
@@ -107,7 +113,7 @@
 
 .imagem_direita {
     display: flex;
-    height: 20rem;
+    height: 15rem;
 }
 
 /* CONTEUDO PARTE DE DADOS */
@@ -137,7 +143,11 @@
 }
 
 
-@media (min-width:1024px) and (max-width:1439px){
+@media (min-width:720px) and (max-width:1439px){
+    .container_conteudo {
+        margin-top: 2.2rem;
+    }
+
     .conteudo_textos{
         flex-direction: column;
         justify-content: center ;
@@ -147,6 +157,7 @@
 
     .paragrafo_esquerda {
         flex-wrap: wrap;
+        width: 40%;
     }
     
     .conteudo_lista_social {
@@ -176,10 +187,28 @@
     .conteudo_esquerda {
         order:1;
         width: 50%;
+        justify-content: center;
+        align-items: center;
     }
     
     .conteudo_textos {
-        margin-left: 10rem;
+        gap: 2rem;
+    }
+
+    .titulo_esquerda {
+        font-size: 2.4rem;
+    }
+
+    .efeito_nome {
+        font-size: 5rem;
+    }
+
+    .subtitulo_esquerda {
+        font-size: 2rem;
+    }
+
+    .paragrafo_esquerda {
+        font-size: 1rem;
     }
 
     .conteudo_lista_social {
@@ -188,7 +217,13 @@
         justify-content: center;
         width: 100%;
         margin: 5rem 0;
-        
+    }
+
+    .lista_social {
+        width: 20%;
+        justify-content: center;
+        gap: 2rem;
+        margin-left: 2rem;
     }
 
     .link_lista_social {

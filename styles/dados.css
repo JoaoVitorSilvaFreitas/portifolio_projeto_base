@@ -1,7 +1,9 @@
+.dados {
+    font-family: var(--fonte-principal);
+}
 .container_dados {
     display: flex;
     justify-content: space-evenly;
-    font-family: var(--fonte-principal);
     margin-bottom: 2.8rem;
 }
 
@@ -22,12 +24,13 @@
 
 .container_card {
     display: flex;
-    flex-direction:  column;
-    margin-top: 6rem;
+    flex-direction: column;
+    margin-top: 3rem;
 }
 
 .container_card_alinhamento {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
     margin: 1rem;
@@ -38,17 +41,19 @@
     flex-direction: column;
     align-items: center;
     width: 180px;
-    height: 220px;
+    height: 120px;
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
     border: 1px solid var(--cor-primaria);
     border-radius: 24px;
 }
 
-.card:hover {
+.card:hover {        
+    display: flex;
+    align-items: center;
     background: var(--cor-primaria);
-    color:var(--cor-preta)
-    
+    color:var(--cor-preta);
+    box-shadow: 0 0 5px var(--cor-primaria);
 }
 
 .card i {
@@ -56,11 +61,17 @@
     margin: 1rem;
 }
 
+
 .card h2{
     flex-wrap: wrap;
     font-size: 1rem;
     margin: 1rem;
     align-items: center;
+    display: none;
+}
+
+.card .texto_card_2 {
+    display: none;
 }
 
 @media (min-width:720px) and (max-width:1440px) {
@@ -68,6 +79,21 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin:0 3rem;
+    }
+
+    .container_card_alinhamento {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    
+    .card {
+        width: 180px;
+        height: 220px;
+    }
+
+    .card h2{
+        display: flex;
     }
 }
 
@@ -77,10 +103,41 @@
         flex-direction: row;
         margin-top: 5rem;
     }
-
+   
     .container_card {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-    }   
+    }  
+
+    .container_card_alinhamento {
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-around;
+    }
+    
+    .card {
+        width: 180px;
+        height: 220px;
+    }
+
+    .card:hover {
+        flex-direction: row;
+        width: 400px;
+        gap:3rem;
+    }
+
+    .card:hover i{
+        margin-left: 2rem;
+    }
+
+    .card h2{
+        display: flex;
+    }
+
+    .card:hover .texto_card_1 {
+        display: none;
+    }
+    .card:hover .texto_card_2 {
+        display: flex;
+    }
 }
