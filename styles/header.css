@@ -7,7 +7,6 @@
     position: sticky;
     top: 0;
     height: 4rem;
-    box-shadow: 1px 1px 4px var(--cor-primaria);
 }
 
 .container_cabeçalho {
@@ -79,9 +78,12 @@
     top: 0;
     left: 0;
     background-color: var(--cor-background);
+    font-family: var(--fonte-principal);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
     padding-top: 60px;
+    box-shadow: 1px 1px 5px var(--cor-primaria);
+    border-top-right-radius: 24px;
 }
 
 .sidebar a {

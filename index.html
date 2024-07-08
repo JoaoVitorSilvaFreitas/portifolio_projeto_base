@@ -11,7 +11,7 @@
 </head>
     <body>
         <header class="cabeçalho" id="header">
-            <button class="abrir_nav" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            <button class="abrir_nav" onclick="abrirNav()"><i class="fa-solid fa-bars"></i></button>
             <div class="container_cabeçalho">
                 <h2 class="cabeçalho_logo_titulo"><span class="estilo_titulo">>_</span>João V</h2>
             </div> 
@@ -37,9 +37,9 @@
                 <a class="botao botao_cabeçalho" href="#">Contato</a>
             </div>
         </header>
-
+        
         <div id="sidebar" class="sidebar">
-            <a  class="fechar_nav" href="#" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+            <a class="fechar_nav" href="javascript:void(0)" onclick="fecharNav()"><i class="fa-solid fa-xmark"></i></a>
             <a class="item_cabeçalho" href="#">Home</a>
             <a class="item_cabeçalho" href="#">Conhecimentos</a>
             <a class="item_cabeçalho" href="#">Carreira</a>
