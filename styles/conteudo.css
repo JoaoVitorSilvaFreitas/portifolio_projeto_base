@@ -24,7 +24,7 @@
 }
 
 .subtitulo_esquerda {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--cor-tercearia);
     margin-bottom: 1rem;
 }
@@ -47,7 +47,7 @@
     margin-top: 2rem;
     flex-wrap: wrap;    
     color: var(--cor-tercearia);
-    width: 80%;
+    width: 50%;
 }
 
 .conteudo_lista_social {
@@ -157,7 +157,7 @@
 
     .paragrafo_esquerda {
         flex-wrap: wrap;
-        width: 40%;
+        width: 25%;
     }
     
     .conteudo_lista_social {
@@ -209,6 +209,7 @@
 
     .paragrafo_esquerda {
         font-size: 1rem;
+        width: 50%;
     }
 
     .conteudo_lista_social {

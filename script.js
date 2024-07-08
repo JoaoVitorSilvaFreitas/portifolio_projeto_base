@@ -1,18 +1,21 @@
 function abrirNav() {
-    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("sidebar").classList.add("sidebar-open");
+    document.body.classList.add("body-lock");
     setTimeout(() => {
         document.addEventListener('click', clickFora);
-    }, 0); // Adiciona um pequeno atraso para evitar o conflito de clique imediato
+    }, 0);
 }
 
 function fecharNav() {
-    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("sidebar").classList.remove("sidebar-open");
+    document.body.classList.remove("body-lock");
     document.removeEventListener('click', clickFora);
 }
 
 function clickFora(event) {
     var sidebar = document.getElementById("sidebar");
-    if (!sidebar.contains(event.target) && sidebar.style.width === "250px") {
+
+    if (!sidebar.contains(event.target) && sidebar.classList.contains("sidebar-open")) {
         fecharNav();
     }
 }
