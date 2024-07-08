@@ -10,32 +10,43 @@
     <title>Portifolio João</title>
 </head>
     <body>
-        <header class="cabeçalho">
+        <header class="cabeçalho" id="header">
+            <button class="abrir_nav" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
             <div class="container_cabeçalho">
                 <h2 class="cabeçalho_logo_titulo"><span class="estilo_titulo">>_</span>João V</h2>
-            </div>  
+            </div> 
             <div class="container_lista_cabeçalho">
                 <ul class="lista_cabeçalho">
                     <li class="lista_cabeçalho_item">
                         <a class="item_cabeçalho" href="#">Home</a>
                     </li>
                     <li class="lista_cabeçalho_item">
-                        <a  class="item_cabeçalho" href="#dados">Conhecimentos</a>
+                        <a class="item_cabeçalho" href="#">Conhecimentos</a>
                     </li>
                     <li class="lista_cabeçalho_item">
-                        <a  class="item_cabeçalho" href="#">Carreira</a>
+                        <a class="item_cabeçalho" href="#">Carreira</a>
                     </li>
 
                     <li class="lista_cabeçalho_item">
-                        <a  class="item_cabeçalho" href="#">Projetos</a>
+                        <a class="item_cabeçalho" href="#">Projetos</a>
                     </li>
                     <li class="lista_cabeçalho_item">
-                        <a  class="item_cabeçalho" href="#">Social Media</a>
+                        <a class="item_cabeçalho" href="#">Social Media</a>
                     </li>
                 </ul>
                 <a class="botao botao_cabeçalho" href="#">Contato</a>
             </div>
         </header>
+
+        <div id="sidebar" class="sidebar">
+            <a  class="fechar_nav" href="#" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+            <a class="item_cabeçalho" href="#">Home</a>
+            <a class="item_cabeçalho" href="#">Conhecimentos</a>
+            <a class="item_cabeçalho" href="#">Carreira</a>
+            <a class="item_cabeçalho" href="#">Projetos</a>
+            <a class="item_cabeçalho" href="#">Social Media</a>
+            <a class="item_cabeçalho" href="#">Contato</a>
+        </div>
 
         <section class="container_conteudo">
             <div class="conteudo_esquerda">
@@ -99,33 +110,33 @@
                         <i class="fa-brands fa-html5"></i>
                         <div>
                             <h2 class="texto_card_1">HTML</h2>
-                            <h2 class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</h2>
+                            <p class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</p>
                         </div>
                     </div>
                     <div class="botao card">
                         <i class="fa-brands fa-css3-alt"></i>
                         <div>
                             <h2 class="texto_card_1">CSS</h2>
-                            <h2 class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</h2>
+                            <p class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</p>
                         </div>
                     </div>
                     <div class="botao card">
                         <i class="fa-brands fa-sass"></i>
                         <div>
                             <h2 class="texto_card_1">SASS</h2>
-                            <h2 class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error</h2>
+                            <p class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="botao card">
-                        
                         <i class="fa-brands fa-js"></i>
                         <div>
                             <h2 class="texto_card_1">JavaScript</h2>
-                            <h2 class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</h2>
+                            <p class="texto_card_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, odio. Fuga quaerat totam a qui, error, voluptas delectus ipsam unde cum eum, temporibus explicabo veritatis eius quibusdam optio quod quisquam!</p>
                         </div>
                     </div>
             </div>            
         </section>
 
+        <script src="script.js"></script>
     </body>
 </html>

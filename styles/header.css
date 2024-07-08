@@ -1,12 +1,13 @@
 .cabeçalho {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: var(--fonte-principal);
     background: var(--cor-background);
     position: sticky;
     top: 0;
     height: 4rem;
+    box-shadow: 1px 1px 4px var(--cor-primaria);
 }
 
 .container_cabeçalho {
@@ -16,7 +17,8 @@
 }
 
 .cabeçalho_logo_titulo {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    display: none;
 }
 
 .estilo_titulo {
@@ -30,11 +32,18 @@
 
 .lista_cabeçalho {
     display: none;
-    gap: 1rem;
+    font-size: 1rem;
+    gap: 1.8rem
+}
+
+.item_cabeçalho {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 1.2rem;
 }
 
 .botao_cabeçalho {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: .8rem 1.6rem;
@@ -48,12 +57,91 @@
     box-shadow: 0 0 1px 1px var(--cor-primaria);
 }
 
+.abrir_nav {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:transparent;
+    color: var(--cor-tercearia);
+    padding: 10px 15px;
+    border: none;
+    margin-left: 20px;
+}
+
+.abrir_nav:hover {
+    background-color: var(--cor-tercearia);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-background);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--cor-tercearia);
+    display: block;
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .fechar_nav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 1.4rem;
+    margin-left: 50px;
+}
+
+@media (min-width:720px) and (max-width:1440px) {
+    .cabeçalho{
+        justify-content: space-around;
+    }
+
+    .abrir_nav {
+        display: none;
+    }
+
+    .cabeçalho_logo_titulo {
+        display: flex;
+    }
+
+    .botao_cabeçalho {
+        display: flex;
+    }
+
+}
+
 @media (min-width:1440px){
+    .cabeçalho{
+        justify-content: space-around;
+    }
+
+    .abrir_nav {
+        display: none;
+    }
 
     .lista_cabeçalho {
         display: flex;
         align-items: center;
         margin-right: 3rem;
+    }
+
+    .cabeçalho_logo_titulo {
+        display: flex;
     }
 
     .item_cabeçalho {
@@ -63,6 +151,10 @@
 
     .item_cabeçalho:hover{
         color: var(--cor-primaria);
+    }
+
+    .botao_cabeçalho {
+        display: flex;
     }
 
 }
