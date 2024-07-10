@@ -4,9 +4,10 @@
     justify-content: space-between;
     font-family: var(--fonte-principal);
     background: var(--cor-background);
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 4rem;
+    width: 100%;
 }
 
 .container_cabeçalho {
@@ -120,7 +121,7 @@
     }
 
     .abrir_nav {
-        display: none;
+        display: flex;
     }
 
     .cabeçalho_logo_titulo {

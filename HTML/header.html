@@ -14,10 +14,10 @@
         <div class="container_lista_cabeçalho">
             <ul class="lista_cabeçalho">
                 <li class="lista_cabeçalho_item">
-                    <a class="item_cabeçalho" href="#">Home</a>
+                    <a class="item_cabeçalho" href="#"  onclick="loadContent('./HTML/conteudoPrincipal.html'); return false;">Home</a>
                 </li>
                 <li class="lista_cabeçalho_item">
-                    <a class="item_cabeçalho" href="#">Conhecimentos</a>
+                    <a class="item_cabeçalho" href="#" onclick="loadContent('../HTML/conhecimentos.html'); return false;">Conhecimentos</a>
                 </li>
                 <li class="lista_cabeçalho_item">
                     <a class="item_cabeçalho" href="#">Carreira</a>
@@ -33,5 +33,7 @@
             <a class="botao botao_cabeçalho" href="#">Contato</a>
         </div>
     </header>
+
+    <script src="./JavaScript/alterarPaginas.js" defer></script>
 </body>
 </html>

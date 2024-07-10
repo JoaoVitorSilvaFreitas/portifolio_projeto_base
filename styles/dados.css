@@ -1,16 +1,20 @@
 .dados {
     font-family: var(--fonte-principal);
 }
+
 .container_dados {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2.8rem;
+    justify-content: space-evenly; 
+    flex-direction: column;
+    margin-top: 2.2rem;
 }
 
 .infos {
     display: flex;
-    gap:1.2rem;
+    gap:2.2rem 0;
     align-items: center;
+    justify-content: center;
+    margin-top: 2.2rem;
 }
 
 .dados_numeros {
@@ -25,7 +29,7 @@
 .container_card {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .container_card_alinhamento {
@@ -75,11 +79,21 @@
 }
 
 @media (min-width:720px) and (max-width:1440px) {
+
+    .dados {
+        margin-top: 5rem;
+    }
     .container_card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        margin:0 3rem;
+        margin-top: 5rem;
+    }
+
+    .container_dados {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
     }
 
     .container_card_alinhamento {
@@ -101,7 +115,7 @@
     .container_dados {
         display: flex;
         flex-direction: row;
-        margin-top: 5rem;
+        margin-top: -4rem;
     }
    
     .container_card {
