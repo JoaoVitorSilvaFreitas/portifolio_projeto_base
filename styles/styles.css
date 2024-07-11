@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(conteudo.css);
 @import url(dados.css);
+@import url(projetos.css);
 
 :root {
     --cor-branca: #fff;

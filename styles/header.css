@@ -1,7 +1,7 @@
 .cabeçalho {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: var(--fonte-principal);
     background: var(--cor-background);
     position: fixed;
@@ -17,12 +17,14 @@
 }
 
 .cabeçalho_logo_titulo {
-    font-size: 2.5rem;
-    display: none;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    order:1;
 }
 
 .estilo_titulo {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     color: var(--cor-primaria);
 }
 
@@ -64,7 +66,8 @@
     color: var(--cor-tercearia);
     padding: 10px 15px;
     border: none;
-    margin-left: 20px;
+    margin-right: 20px;
+    order:3
 }
 
 .abrir_nav:hover {
@@ -77,17 +80,18 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: var(--cor-background);
     font-family: var(--fonte-principal);
     overflow-x: hidden;
     transition: 0.8s;
     padding-top: 60px;
-    box-shadow: 1px 1px 5px var(--cor-primaria);
-    border-top-right-radius: 24px;
+    box-shadow: -1px 1px 5px var(--cor-primaria);
+    border-top-left-radius: 24px;
 }
 
 .sidebar a {
+    justify-content: fle;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -122,6 +126,7 @@
 
     .abrir_nav {
         display: flex;
+        order:2;
     }
 
     .cabeçalho_logo_titulo {
@@ -129,7 +134,7 @@
     }
 
     .botao_cabeçalho {
-        display: flex;
+        display: none;
     }
 
 }

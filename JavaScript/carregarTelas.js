@@ -33,6 +33,6 @@ function loadContent(url) {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML("header", "./HTML/header.html");
     loadHTML("aside", "./HTML/aside.html");
-    loadHTML("main","../HTML/conteudoPrincipal.html")
+    loadHTML("main","./HTML/conteudoPrincipal.html")
 });
 

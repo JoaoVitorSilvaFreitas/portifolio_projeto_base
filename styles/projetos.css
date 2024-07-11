@@ -1,0 +1,95 @@
+.container_projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-family: var(--fonte-principal);
+}
+
+/* Tudo sobre o CARD */
+.card_projeto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: .8rem;
+    width: 90%;    
+    border-bottom: 1px solid var(--cor-tercearia);
+    background-color: transparent;
+}
+.card_projeto_superior{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.card_projeto_superior:hover {    
+    transition: all .8s ease-in-out; 
+}
+
+.card_projeto_superior h2{
+    font-size: 2.4rem;
+    width: 50%;
+    margin-right: 1rem;
+    transition: all .8s ease-in-out; 
+    text-transform: uppercase;
+}
+
+.card_projeto_superior h2:hover {
+    color: var(--cor-primaria);     
+}
+
+.card_projeto_icones{
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+}
+
+.card_projeto_superior i{
+    display: flex; 
+    padding: .6rem;
+    color: var(--cor-branca);
+    align-items: center;
+    border: 1px solid var(--cor-branca);
+    border-radius: 24px;
+    font-size: 1.4rem;
+    transition: all .8s ease-in-out; 
+}
+
+.card_projeto_superior i:hover {
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);   
+}
+
+.card_projeto_inferior p{
+    margin-bottom: 2rem;
+}
+
+/* faz a alteração do hover dentro de todos os elementos dentro  */
+.card_projeto:hover .card_projeto_superior h2,
+.card_projeto:hover .card_projeto_superior i {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.card_projeto:hover .card_projeto_superior i:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+@media (min-width:720px){
+    .container_projetos {  
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .card_projeto {
+        justify-content: flex-start;
+        width: 45%;
+        gap: 2rem;
+    }
+    .card_projeto_inferior p{
+        margin-top: -2rem;
+    }
+}
