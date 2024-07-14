@@ -1,3 +1,4 @@
+// FUNÇÃO PARA ABRIR O SIDEBAR
 function abrirNav() {
     document.getElementById("sidebar").classList.add("sidebar-open");
     document.body.classList.add("body-lock");

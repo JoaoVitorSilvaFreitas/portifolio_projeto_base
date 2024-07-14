@@ -1,7 +1,7 @@
 .cabeçalho {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: var(--fonte-principal);
     background: var(--cor-background);
     position: fixed;
@@ -14,17 +14,18 @@
     display: flex;
     justify-self: flex-start;
     align-items: center;
+    margin-left: 3rem;
 }
 
 .cabeçalho_logo_titulo {
-    font-size: 1.4rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     order:1;
 }
 
 .estilo_titulo {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--cor-primaria);
 }
 
@@ -121,7 +122,7 @@
 
 @media (min-width:720px) and (max-width:1440px) {
     .cabeçalho{
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .abrir_nav {
@@ -141,7 +142,15 @@
 
 @media (min-width:1440px){
     .cabeçalho{
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .container_cabeçalho {
+        margin-left: 3rem;
+    }
+
+    .container_lista_cabeçalho {
+        margin-right: 3rem;
     }
 
     .abrir_nav {
@@ -163,8 +172,16 @@
         color: var(--cor-branca);
     }
 
-    .item_cabeçalho:hover{
+    /* .item_cabeçalho:hover{
         color: var(--cor-primaria);
+        text-shadow: 0 0 1px var(--cor-primaria);
+        border-bottom: 1px solid var(--cor-primaria);
+    } */
+
+    .item_cabeçalho::after{
+        color: var(--cor-primaria);
+        text-shadow: 0 0 1px var(--cor-primaria);
+        border-bottom: 1px solid var(--cor-primaria);
     }
 
     .botao_cabeçalho {

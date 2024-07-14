@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../styles/reset.css"/>  
+    <title>Contato</title>
+</head>
+<body>
+    <div class="container_contato">
+
+            <p class="contato_texto">
+                Para mais informações ou para contratar meus serviços.
+                entre em contato através do formulário abaixo.
+            </p>
+
+            <form class="container_formulario"action="https://formsubmit.co/joaovitordasilvafreitas@gmail.com" method="POST">
+                <h2>Nome</h2>
+                <input type="text" name="name" required>
+                <h2>Email</h2>
+                <input type="email" name="email" required>
+                <h2>Mensagem</h2>
+                <textarea type="message" name="mensagem" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button class="botao botao_formulario" type="submit">Enviar E-mail</button>
+           </form>
+    </div>
+</body>
+</html>

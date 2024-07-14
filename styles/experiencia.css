@@ -1,35 +1,91 @@
-.dados {
+.body {
+    width: 100%;
+    height: 100%;
+}
+
+/* EXPERIÊNCIA */
+.container_section_experiencia {
+    margin-top: 20rem;
     font-family: var(--fonte-principal);
 }
 
-.container_dados {
+.section_experiencia {
     display: flex;
-    justify-content: space-evenly; 
     flex-direction: column;
-    margin-top: 2.2rem;
-}
-
-.infos {
-    display: flex;
-    gap:2.2rem 0;
-    align-items: center;
+    margin-top: rem;
     justify-content: center;
-    margin-top: 2.2rem;
+    align-items: center;
+    width: 100%;
+    gap: 1.8rem;
 }
 
-.dados_numeros {
-    font-size: 3.2rem;
+.section_experiencia_textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 4rem;
+    background-color: var(--cor-background);
 }
 
-.dados_textos {
-    font-size: 1.2rem;
+.section_experiencia_textos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.section_experiencia_textos p {
+    width: 70%;
+    padding: 2rem 0 ;
+
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 12rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+    border-radius: 24px;
+    gap: 2rem;
+    background-color: var(--cor-quaternaria);
+    margin: 2rem 0;
+}
+
+.cartao_paragrafo_top{
+    color: var(--cor-primaria);
+    margin-top: 2rem;
+}
+
+.cartao h3 {
+    font-size: 2rem;
+}
+
+.cartao_paragrafo_bot {
     color: var(--cor-tercearia);
+    font-size: .8rem;
 }
 
+.section_experiências_conteudo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    width: 80%;
+    gap: 1.4rem;
+}
+
+
+/* CARDS */
 .container_card {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    width: 100%;
+    margin-top: 10rem;
 }
 
 .container_card_alinhamento {
@@ -80,20 +136,11 @@
 
 @media (min-width:720px) and (max-width:1440px) {
 
-    .dados {
-        margin-top: 5rem;
-    }
     .container_card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 5rem;
-    }
-
-    .container_dados {
-        display: flex;
-        flex-direction: row;
-        margin-top: 0;
     }
 
     .container_card_alinhamento {
@@ -112,11 +159,6 @@
 }
 
 @media (min-width:1440px) {
-    .container_dados {
-        display: flex;
-        flex-direction: row;
-        margin-top: -4rem;
-    }
    
     .container_card {
         display: flex;
