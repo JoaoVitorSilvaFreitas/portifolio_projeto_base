@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 form {
@@ -30,7 +30,7 @@ textarea {
     background-color: var(--cor-tercearia);
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0;
     outline: none;
 }
 
