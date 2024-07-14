@@ -25,13 +25,13 @@
 
 .subtitulo_esquerda {
     font-size: 1.2rem;
-    color: var(--cor-tercearia);
+    color: var(--cor-branca);
     margin-bottom: 1rem;
 }
 
 .titulo_esquerda {
     font-size: 2rem;    
-    color: var(--cor-tercearia);
+    color: var(--cor-branca);
 }
 
 .efeito_nome {
@@ -77,7 +77,6 @@
 .botao_cv:hover,
 .link_lista_social:hover {
     background: var(--cor-primaria);
-    text-shadow: 0 0 12px var(--cor-preta);
     box-shadow: 0 0 1px 1px var(--cor-primaria);
 }
 
@@ -100,7 +99,7 @@
 }
 
 .linha_lista_social:hover {
-    color: var(--cor-preta);
+    color: var(--cor-branca);
 }
 
 /* CONTEUDO PARTE DIREITA */

@@ -5,26 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css"/>
     <link rel="stylesheet" href="../styles/reset.css"/>  
+    <script src="https://kit.fontawesome.com/d0a6cd339c.js" 
+    crossorigin="anonymous"></script> 
     <title>Contato</title>
 </head>
 <body>
-    <div class="container_contato">
+    <div class="conteudo_informacoes">
+        <div class="container_informacoes">     
+            <div class="container_informacoes_fixas">
+                <div class="informacoes_fixas">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="informacoes_textos">
+                        <p>Telefone:</p>
+                        <p>(+55)12 9824893**</p>
+                    </div>
+                </div>   
+                <div class="informacoes_fixas">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="informacoes_textos">
+                        <p>Endereço:</p>
+                        <p>São josé dos Campos, São Paulo</p>
+                    </div>
+                </div>   
+                <div class="informacoes_fixas">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="informacoes_textos">
+                        <p>E-mail:</p>
+                        <p>joaovitordasilvafreitas@gmail.com</p>
+                    </div>
+                </div>   
+            </div>
+            
+        </div>
 
-            <p class="contato_texto">
-                Para mais informações ou para contratar meus serviços.
-                entre em contato através do formulário abaixo.
-            </p>
+        <div class="conteudo_contato">
+            <div class="container_contato">
+                <h2 class="contato_titulo">Vamos trabalhar juntos !</h2>
+                <p class="contato_texto">
+                    Para mais informações ou para contratar meus serviços.
+                    entre em contato com as informações ou através do formulário abaixo.
+                </p>
+            </div>
 
-            <form class="container_formulario"action="https://formsubmit.co/joaovitordasilvafreitas@gmail.com" method="POST">
-                <h2>Nome</h2>
-                <input type="text" name="name" required>
-                <h2>Email</h2>
-                <input type="email" name="email" required>
-                <h2>Mensagem</h2>
-                <textarea type="message" name="mensagem" required></textarea>
-                <input type="hidden" name="_captcha" value="false">
-                <button class="botao botao_formulario" type="submit">Enviar E-mail</button>
-           </form>
+            <div class="card_contato">
+                <form class="container_formulario"action="https://formsubmit.co/joaovitordasilvafreitas@gmail.com" method="POST">
+                    <h2>Nome</h2>
+                    <input type="text" name="name" required autocomplete="off">
+                    <h2>Email</h2>
+                    <input type="email" name="email" required autocomplete="off">
+                    <h2>Selecione o serviço:</h2>
+                    <select type="select" name="select" required >
+                        <option type="option" name="ux_design" value="ux_design">Ux Design</option>
+                        <option type="option" name="web_developer" value="web_developer">Web Developer </option>
+                    </select>
+                    <h2>Mensagem</h2>
+                    <textarea type="message" name="mensagem" required autocomplete="off"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <button class="botao botao_formulario" type="submit">Enviar E-mail</button>
+            </form>
+            </div>  
+        </div>
     </div>
 </body>
 </html>

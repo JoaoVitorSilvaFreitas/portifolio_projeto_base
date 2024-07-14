@@ -143,6 +143,12 @@
         margin-top: 5rem;
     }
 
+    .container_informacoes_fixas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .container_card_alinhamento {
         flex-direction: row;
         max-width: 100%;

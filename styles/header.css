@@ -73,7 +73,7 @@
 }
 
 .abrir_nav:hover {
-    background-color: var(--cor-tercearia);
+    background-color: transparent;
 }
 
 .sidebar {
