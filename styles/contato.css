@@ -1,7 +1,7 @@
 .container_contato {
     display: flex;
     font-family: var(--fonte-principal);
-    margin-top: 6rem;
+    margin-top: 1rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.container_informacoes {
+.container_informacoes_fixas{
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-principal);
@@ -45,9 +45,6 @@
 .informacoes_textos p {
     padding: .4rem;
     font-size: .8rem;
-}
-
-.conteudo_contato {
 }
 
 .card_contato {
@@ -120,26 +117,33 @@ textarea {
     box-shadow: 0 0 1px 1px var(--cor-primaria);
 }
 
-@media (min-width:720px) and (max-width: 1440){
+@media (min-width:720px) and (max-width: 1440px){
     .container_informacoes {
+        display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .container_informacoes_fixas {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
+        flex-flow: column nowrap;
     }
 }
 
 @media (min-width: 1440px) {
+    .card_contato{
+        margin-top: -3rem;
+    }
+
     .conteudo_informacoes{
         display: flex;
         flex-direction: row;
         justify-content: center;    
         align-items: center;
+    }
+
+    .container_informacoes {
+        flex-direction: column;
     }
 
     .conteudo_informacoes_fixas {

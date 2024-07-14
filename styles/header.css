@@ -88,7 +88,7 @@
     overflow-x: hidden;
     transition: 0.8s;
     padding-top: 60px;
-    box-shadow: -1px 1px 5px var(--cor-background);
+    box-shadow: -1px 1px 5px var(--cor-quaternaria);
     border-top-left-radius: 8px;
 }
 
@@ -97,14 +97,14 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: var(--cor-tercearia);
+    color: var(--cor-branca);
     display: block;
     transition: 0.3s;
     margin-top: 2rem;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: var(--cor-primaria);
 }
 
 .sidebar .fechar_nav {
