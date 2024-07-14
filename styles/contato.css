@@ -54,3 +54,11 @@ textarea {
     background: var(--cor-primaria);
     box-shadow: 0 0 1px 1px var(--cor-primaria);
 }
+
+@media (min-width:720px) and (max-width:1440px) {
+    
+}
+
+@media (min-width:1440px) {
+    
+}
