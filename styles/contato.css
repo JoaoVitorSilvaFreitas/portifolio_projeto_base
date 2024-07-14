@@ -4,7 +4,8 @@
     margin-top: 5rem;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-direction: column;
+    
 }
 
 .contato_texto {
