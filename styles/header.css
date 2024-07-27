@@ -62,7 +62,7 @@
 }
 
 .abrir_nav {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     background-color:transparent;
     color: var(--cor-tercearia);
@@ -88,12 +88,11 @@
     overflow-x: hidden;
     transition: 0.8s;
     padding-top: 60px;
-    box-shadow: -1px 1px 5px var(--cor-quaternaria);
+    box-shadow: -1px 1px 5px var(--cor-quaternaria);    
     border-top-left-radius: 8px;
 }
 
 .sidebar a {
-    justify-content: fle;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -105,14 +104,17 @@
 
 .sidebar a:hover {
     color: var(--cor-primaria);
+    margin-bottom: 1px solid var(--cor-primaria);
 }
 
-.sidebar .fechar_nav {
+.sidebar .fechar_nav {  
     position: absolute;
-    top: -1.1rem;
-    right: 25px;
-    font-size: 1.4rem;
-    margin-left: 50px;
+    top: -1.3rem;
+    right: 23px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
 }
 .sidebar-open {
     width: 250px;
