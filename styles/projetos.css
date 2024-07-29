@@ -2,18 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
     font-family: var(--fonte-principal);
+    height: 100vh;
 }
 
 /* Tudo sobre o CARD */
 .card_projeto {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-around;
     margin: .8rem;
-    width: 90%;    
-    border-bottom: 1px solid var(--cor-tercearia);
+    padding-top: 1rem;
+    width: 90%;  
+    height: 25rem;
     background-color: transparent;
 }
 .card_projeto_superior{
@@ -119,8 +121,6 @@
     transition: 0.3s;
 }
 
-
-
 .dropdown-container-task-lista:hover,
 .dropdown-container-botao:hover ~ .dropdown-container-task-lista {
     display: flex;
@@ -137,10 +137,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.card_projeto_inferior p{
+    border-bottom: 1px solid var(--cor-tercearia);
     
-    margin-bottom: 2rem;
+}
+.card_projeto_inferior-container {
+    width: 100%;
+    height: 90%;
+}
+
+.card_projeto_inferior p{
+    margin-bottom: 3rem;
+    -webkit-line-clamp: 4;
 }
 
 /* faz a alteração do hover dentro de todos os elementos dentro  */
@@ -159,6 +166,7 @@
     .container_projetos {  
         justify-content: center;
         flex-flow: row wrap;
+        height: 0;
     }
 
     .card_projeto {
@@ -168,5 +176,13 @@
     }
     .card_projeto_inferior p{
         margin-top: -2rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .card_projeto {
+        width: 45%;
+        height: 15rem;
+        gap: 2rem;
     }
 }

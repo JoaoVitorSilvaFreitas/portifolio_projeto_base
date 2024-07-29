@@ -26,6 +26,8 @@
 }
 
 .informacoes_fixas i {
+    width: 25px;
+    height: 25px;
     font-size: 1.4rem;
     margin-right: .6rem;
     color: var(--cor-primaria);
