@@ -23,6 +23,18 @@
     margin-top: 2rem;
 }
 
+.nome_esquerda-h2::before {
+    animation: 
+    typing 2s steps(10),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .subtitulo_esquerda {
     font-size: 1.2rem;
     color: var(--cor-branca);

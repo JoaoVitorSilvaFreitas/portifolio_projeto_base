@@ -28,11 +28,10 @@ function loadContent(url) {
             }
         })
         .catch(error => console.error('Erro ao carregar o conteúdo:', error));
-}   
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML("header", "./HTML/header.html");
     loadHTML("aside", "./HTML/aside.html");
     loadHTML("main","./HTML/conteudoPrincipal.html")
 });
-

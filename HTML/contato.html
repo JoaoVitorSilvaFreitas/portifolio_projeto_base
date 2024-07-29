@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css"/>
-    <link rel="stylesheet" href="../styles/reset.css"/>  
-    <script src="https://kit.fontawesome.com/d0a6cd339c.js" 
-    crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <script src="https://kit.fontawesome.com/d0a6cd339c.js" crossorigin="anonymous"></script>
     <title>Contato</title>
 </head>
+
 <body>
     <div class="conteudo_informacoes">
-        <div class="container_informacoes">     
+        <div class="container_informacoes">
             <div class="container_informacoes_fixas">
                 <div class="informacoes_fixas">
                     <i class="fa-solid fa-phone"></i>
@@ -19,37 +20,37 @@
                         <p>Telefone:</p>
                         <p>(+55) 12 98248-93**</p>
                     </div>
-                </div>   
+                </div>
                 <div class="informacoes_fixas">
                     <i class="fa-solid fa-map-location-dot"></i>
                     <div class="informacoes_textos">
                         <p>Endereço:</p>
                         <p>São josé dos Campos, São Paulo</p>
                     </div>
-                </div>   
+                </div>
                 <div class="informacoes_fixas">
                     <i class="fa-solid fa-envelope"></i>
                     <div class="informacoes_textos">
                         <p>E-mail:</p>
                         <p>joaovitordasilvafreitas@gmail.com</p>
                     </div>
-                </div>   
+                </div>
                 <div class="informacoes_fixas">
-                    <i class="fa-brands fa-linkedin-in"></i> 
+                    <i class="fa-brands fa-linkedin-in"></i>
                     <div class="informacoes_textos">
                         <p>Linkedin:</p>
                         <p>João Vitor Freitas</p>
                     </div>
-                </div>  
+                </div>
                 <div class="informacoes_fixas">
-                    <i class="fa-brands fa-github"></i> 
+                    <i class="fa-brands fa-github"></i>
                     <div class="informacoes_textos">
                         <p>Github:</p>
                         <p>JoaoVitorSilvaFreitas</p>
                     </div>
-                </div>  
+                </div>
             </div>
-            
+
         </div>
 
         <div class="conteudo_contato">
@@ -62,23 +63,27 @@
             </div>
 
             <div class="card_contato">
-                <form class="container_formulario"action="https://formsubmit.co/joaovitordasilvafreitas@gmail.com" method="POST">
+                <form class="container_formulario" action="https://formsubmit.co/joaovitordasilvafreitas@gmail.com"
+                    method="POST">
                     <h2>Nome</h2>
                     <input type="text" name="name" required autocomplete="off">
                     <h2>Email</h2>
                     <input type="email" name="email" required autocomplete="off">
                     <h2>Selecione o serviço:</h2>
-                    <select type="select" name="select" required >
+                    <select type="select" name="select" required>
                         <option type="option" name="ux_design" value="ux_design">Ux Design</option>
                         <option type="option" name="web_developer" value="web_developer">Web Developer </option>
                     </select>
                     <h2>Mensagem</h2>
                     <textarea type="message" name="mensagem" required autocomplete="off"></textarea>
-                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/HTML/agradecimentoContato.html">
+                    <input type="hidden" name="_autoresponse" value="Agradeço o seu contato, respondo assim que houver disponibilidade">
                     <button class="botao botao_formulario" type="submit">Enviar E-mail</button>
-            </form>
-            </div>  
+                </form>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,33 @@
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.texto_agradecimento {
+    font-size: 42px;
+    font-family: var(--fonte-principal);
+}
+
+.botao_voltar {
+    max-width: 150px;
+    max-height: 50px;
+    padding: 1rem;
+    background-color: var(--cor-secundaria);
+    margin-top: 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color:var(--cor-branca);
+    box-shadow: 1px 1px 2px var(--cor-primaria);
+}
+
+.botao_voltar:hover {
+    background-color: var(--cor-primaria);
+}
+
+.botao_voltar:active {
+    transform: translateY(5px);
+}
